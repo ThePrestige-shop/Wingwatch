@@ -314,3 +314,108 @@ p  { color: var(--text-muted); font-weight: 300; font-size: 1.02rem; }
   .footer__grid { grid-template-columns: 1fr; }
   .footer__bottom { flex-direction: column; text-align: center; }
 }
+/* ── Target Groups ─────────────────────────────────────── */
+/* Add this to style.css so it works on both pages          */
+
+.target-groups { background: var(--bg); }
+
+.target-groups__grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+/* Sticky header on desktop so it stays visible as you scroll the list */
+.target-groups__header {
+  position: sticky;
+  top: 90px;
+}
+
+.target-groups__header p {
+  margin-top: 0.5rem;
+}
+
+/* List */
+.target-groups__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Each item */
+.target-item {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  gap: 1.5rem;
+  align-items: start;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--border);
+  transition: var(--transition);
+}
+
+.target-item:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.target-item:hover {
+  padding-left: 0.5rem;
+}
+
+.target-item__number {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--accent-light);
+  line-height: 1;
+  padding-top: 0.15rem;
+  flex-shrink: 0;
+  transition: var(--transition);
+}
+
+[data-theme="dark"] .target-item__number {
+  color: var(--primary-light);
+  opacity: 0.5;
+}
+
+.target-item:hover .target-item__number {
+  color: var(--accent);
+}
+
+.target-item__body h4 {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  transition: var(--transition);
+}
+
+.target-item:hover .target-item__body h4 {
+  color: var(--primary);
+}
+
+.target-item__body p {
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .target-groups__grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .target-groups__header {
+    position: static;
+  }
+}
+
+@media (max-width: 600px) {
+  .target-item {
+    grid-template-columns: 2.5rem 1fr;
+    gap: 1rem;
+  }
+
+  .target-item__number {
+    font-size: 1.5rem;
+  }
+}
