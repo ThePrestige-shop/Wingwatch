@@ -1,0 +1,74 @@
+/* ── Donate Page ── */
+.donate-grid { display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:start; }
+
+.donate-info h2 { margin-bottom:0.5rem; }
+
+.impact-items { display:flex; flex-direction:column; gap:1rem; margin:2rem 0; }
+
+.impact-item {
+  display:grid; grid-template-columns:5rem 1fr;
+  gap:1.25rem; align-items:center;
+  padding:1.25rem; background:var(--bg-card);
+  border-radius:var(--radius-lg); border:1px solid var(--border);
+  transition:var(--transition);
+}
+.impact-item:hover { border-color:var(--primary-light); box-shadow:var(--shadow-sm); }
+.impact-item__amount {
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.75rem; font-weight:600;
+  color:var(--primary); text-align:center;
+}
+.impact-item__desc { font-size:0.9rem; color:var(--text-muted); }
+
+.donate-trust {
+  padding:1.25rem 1.5rem;
+  background:var(--accent-pale);
+  border-radius:var(--radius-lg);
+  border-left:3px solid var(--accent);
+}
+.donate-trust__label {
+  font-family:'Jost',sans-serif; font-size:0.72rem;
+  font-weight:600; letter-spacing:0.15em;
+  text-transform:uppercase; color:var(--accent);
+  margin-bottom:0.4rem; display:block;
+}
+.donate-trust p { font-size:0.875rem; }
+
+/* Givebutter widget container */
+.givebutter-placeholder {
+  background:var(--bg-card);
+  border-radius:var(--radius-xl);
+  border:2px dashed var(--border);
+  min-height:480px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:sticky;
+  top:90px;
+}
+.givebutter-placeholder__inner {
+  text-align:center; padding:3rem 2rem;
+  display:flex; flex-direction:column;
+  align-items:center; gap:1rem;
+}
+.givebutter-placeholder__icon { font-size:3rem; }
+.givebutter-placeholder__inner h3 { margin-bottom:0.25rem; }
+.givebutter-placeholder__inner p  { font-size:0.9rem; max-width:300px; }
+
+/* Other Ways */
+.other-ways__grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2rem; }
+.other-way-card {
+  background:var(--bg-card); border-radius:var(--radius-lg);
+  padding:2rem 1.75rem; border:1px solid var(--border);
+  text-align:center; transition:var(--transition);
+}
+.other-way-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-md); }
+.other-way-card__icon { font-size:2rem; display:block; margin-bottom:1rem; }
+.other-way-card h4 { margin-bottom:0.5rem; }
+.other-way-card p  { font-size:0.9rem; }
+
+@media(max-width:900px) {
+  .donate-grid { grid-template-columns:1fr; gap:3rem; }
+  .givebutter-placeholder { position:static; }
+  .other-ways__grid { grid-template-columns:1fr; }
+}

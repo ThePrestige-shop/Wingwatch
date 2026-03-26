@@ -1,0 +1,54 @@
+/* ── About Page ── */
+.about-grid { display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:center; }
+.about-grid__image .img-placeholder { min-height:420px; border-radius:var(--radius-lg); }
+
+.mv-grid { display:grid; grid-template-columns:1fr 1fr; gap:2rem; }
+.mv-card {
+  background:var(--bg-card); border-radius:var(--radius-lg);
+  padding:2.5rem 2rem; border:1px solid var(--border);
+  transition:var(--transition);
+}
+.mv-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-md); }
+.mv-card--accent { border-top:3px solid var(--accent); }
+.mv-card__icon { font-size:2rem; margin-bottom:1rem; display:block; }
+.mv-card h3 { margin-bottom:0.75rem; }
+
+.values-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:2rem; }
+.value-item {
+  padding:2rem 1.5rem;
+  border-radius:var(--radius-lg);
+  background:var(--bg-card);
+  border:1px solid var(--border);
+  transition:var(--transition);
+}
+.value-item:hover { transform:translateY(-4px); box-shadow:var(--shadow-md); border-color:var(--primary-light); }
+.value-item__num {
+  display:block; font-family:'Cormorant Garamond',serif;
+  font-size:3rem; font-weight:600; color:var(--accent-pale);
+  line-height:1; margin-bottom:0.5rem;
+}
+[data-theme="dark"] .value-item__num { color:var(--primary-dark); }
+.value-item h4 { margin-bottom:0.5rem; font-size:1rem; }
+.value-item p  { font-size:0.9rem; }
+
+.partners-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2rem; }
+.partner-card {
+  background:var(--bg-card); border-radius:var(--radius-lg);
+  padding:1.75rem; border:1px solid var(--border);
+  text-align:center; transition:var(--transition);
+}
+.partner-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-md); }
+.partner-card__logo { margin-bottom:1rem; border-radius:var(--radius-md); overflow:hidden; }
+.partner-card h4 { font-size:1rem; margin-bottom:0.5rem; }
+.partner-card p  { font-size:0.875rem; }
+
+@media(max-width:900px) {
+  .about-grid  { grid-template-columns:1fr; gap:2.5rem; }
+  .mv-grid     { grid-template-columns:1fr; }
+  .values-grid { grid-template-columns:1fr 1fr; }
+  .partners-grid { grid-template-columns:1fr 1fr; }
+}
+@media(max-width:600px) {
+  .values-grid   { grid-template-columns:1fr; }
+  .partners-grid { grid-template-columns:1fr; }
+}

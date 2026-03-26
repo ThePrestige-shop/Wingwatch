@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Wingwatch Africa — Dedicated to the conservation and study of African bird species across the continent." />
+  <title>Wingwatch Africa | Home</title>
+  <link rel="icon" type="image/x-icon" href="assets/logos/favicon.png">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a class="nav__logo" href="#">
+    <img src="assets/logos/logo-icon.png" alt="Wingwatch Africa Logo" class="nav__logo-img" />
+    <div>
+      <span class="nav__logo-text">WingWatch Africa</span>
+      <span class="nav__logo-sub">Where Science Takes Flight</span>
+    </div>
+  </a>
+
+      <ul class="nav__links">
+        <li><a class="nav__link" href="about/index.html">About</a></li>
+        <li><a class="nav__link" href="team/index.html">Team</a></li>
+        <li><a class="nav__link" href="research/index.html">Research</a></li>
+        <li><a class="nav__link" href="news/index.html">News</a></li>
+        <li><a class="nav__link nav__link--donate" href="donate/index.html">Donate</a></li>
+      </ul>
+
+      <div class="nav__controls">
+        <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <ul class="nav__mobile">
+      <li><a class="nav__link" href="about/index.html">About</a></li>
+      <li><a class="nav__link" href="team/index.html">Team</a></li>
+      <li><a class="nav__link" href="research/index.html">Research</a></li>
+      <li><a class="nav__link" href="news/index.html">News</a></li>
+      <li><a class="nav__link nav__link--donate" href="donate/index.html">Donate</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- ── Hero ── -->
+      <section class="hero">
+        <div class="hero__bg">
+          <img
+            src="assets/images/hero-bg.jpg"
+            alt="Sulphur-breasted Bushshrike held by field researcher"
+            class="hero__bg-img"
+          />
+          <div class="hero__overlay"></div>
+          <div class="hero__pattern"></div>
+        </div>
+        <div class="container">
+          <div class="hero__content">
+            <span class="hero__label animate-fade-up delay-1">Conservation · Research · Education</span>
+            <h1 class="hero__title animate-fade-up delay-2">
+              Where Science<br/>
+              <em>Takes Flight</em>
+            </h1>
+            <p class="hero__subtitle animate-fade-up delay-3">
+              WingWatch Africa is dedicated to the scientific study, monitoring, and protection
+              of Africa's diverse species and habitats — from the critically endangered
+              to the beautifully abundant.
+            </p>
+            <div class="hero__actions animate-fade-up delay-4">
+              <a href="about/index.html" class="btn btn--white">Discover Our Mission</a>
+              <a href="research/index.html" class="btn btn--outline-white">View Research</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero__scroll">
+          <span>Scroll</span>
+          <div class="hero__scroll-line"></div>
+        </div>
+      </section>
+
+      <!-- ── Mission Intro ── -->
+      <section class="section mission-intro">
+        <div class="container">
+          <div class="mission-intro__grid">
+            <div class="mission-intro__text reveal">
+              <span class="section__label">Who We Are</span>
+              <h2>Science-Driven<br/>Conservation</h2>
+              <div class="divider"></div>
+              <p>
+                WingWatch Africa is a conservation NGO working at the intersection of
+                ecology, policy, and community engagement. We conduct rigorous field research
+                across West Africa, translating scientific findings into actionable strategies
+                that protect biodiversity and support the communities that depend on it.
+              </p>
+              <p style="margin-top:1rem;">
+                Our approach is grounded in the belief that lasting conservation requires
+                honest science, informed policy, and people who understand the landscapes
+                they live in.
+              </p>
+              <a href="about/index.html" class="btn btn--primary" style="margin-top:2rem;">Learn More About Us</a>
+            </div>
+            <div class="mission-intro__visual reveal" style="transition-delay:0.2s">
+              <div class="mission-intro__image-stack">
+                <div class="mission-intro__img mission-intro__img--main">
+                  <img
+                    src="assets/images/hero-bg.jpg"
+                    alt="Field research in West Africa"
+                    style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-lg);"
+                  />
+                </div>
+                <div class="mission-intro__img mission-intro__img--accent">
+                  <div class="img-placeholder img-placeholder--sm">
+                    <img
+                      src="assets/images/hero-one.png"
+                      alt="Field research in West Africa"
+                      style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-lg);"
+                    />
+                    <p>Field Work</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Focus Areas ── -->
+      <section class="section focus-areas" style="background:var(--bg-secondary);">
+        <div class="container">
+          <div class="section__header section__header--center reveal">
+            <span class="section__label">What We Do</span>
+            <h2 class="section__title">Our Focus Areas</h2>
+            <div class="divider divider--center"></div>
+            <p class="section__subtitle">
+              Five interconnected pillars — each essential to building a resilient,
+              ecologically sound future for Africa's people and wildlife.
+            </p>
+          </div>
+
+          <div class="focus-grid focus-grid--five">
+
+            <div class="focus-card reveal">
+              <div class="focus-card__icon">🦉</div>
+              <h3>Biodiversity Conservation</h3>
+              <p>Species monitoring, habitat protection, and ecosystem restoration.</p>
+              <a href="research/index.html" class="focus-card__link">Learn more →</a>
+            </div>
+
+            <div class="focus-card reveal" style="transition-delay:0.1s">
+              <div class="focus-card__icon">🌡️</div>
+              <h3>Climate Change Adaptation</h3>
+              <p>Supporting with community resilience strategies</p>
+              <a href="research/index.html" class="focus-card__link">Learn more →</a>
+            </div>
+
+            <div class="focus-card reveal" style="transition-delay:0.2s">
+              <div class="focus-card__icon">🌾</div>
+              <h3>Sustainable Agriculture</h3>
+              <p>Promoting agroecology, agroforestry, and soil health practices</p>
+              <a href="research/index.html" class="focus-card__link">Learn more →</a>
+            </div>
+
+            <div class="focus-card reveal" style="transition-delay:0.3s">
+              <div class="focus-card__icon">🌍</div>
+              <h3>Environmental Protection</h3>
+              <p>Tackling waste management, water conservation, and reforestation</p>
+              <a href="research/index.html" class="focus-card__link">Learn more →</a>
+            </div>
+
+            <div class="focus-card reveal" style="transition-delay:0.4s">
+              <div class="focus-card__icon">📚</div>
+              <h3>Research & Advocacy</h3>
+              <p>Influencing conservation policy, and building local capacity</p>
+              <a href="research/index.html" class="focus-card__link">Learn more →</a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Impact Bar ── -->
+      <section class="stats-bar">
+        <div class="container">
+          <p class="stats-bar__heading">Our Impact</p>
+          <div class="stats-bar__grid">
+            <div class="stat-item reveal">
+              <span class="stat-item__number">—</span>
+              <span class="stat-item__label">Species Monitored</span>
+            </div>
+            <div class="stat-item reveal" style="transition-delay:0.1s">
+              <span class="stat-item__number">—</span>
+              <span class="stat-item__label">Communities Reached</span>
+            </div>
+            <div class="stat-item reveal" style="transition-delay:0.2s">
+              <span class="stat-item__number">—</span>
+              <span class="stat-item__label">Research Publications</span>
+            </div>
+            <div class="stat-item reveal" style="transition-delay:0.3s">
+              <span class="stat-item__number">—</span>
+              <span class="stat-item__label">International Partners</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ── Partners Strip ── -->
+    <!--  <section class="section--sm partners-strip">
+        <div class="container">
+          <p class="partners-strip__label reveal">Supported by</p>
+          <div class="partners-strip__logos reveal">
+            <div class="partner-logo">African Bird Club</div>
+            <div class="partner-logo">Mohamed bin Zayed Fund</div>
+            <div class="partner-logo">The Rufford Foundation</div>
+            <div class="partner-logo">IdeaWild</div>
+            <div class="partner-logo">APLORI</div>
+          </div>
+        </div>
+      </section> -->
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-logo">
+            <img src="assets/logos/logo-icon.png" alt="Wingwatch Africa" style="width:36px; height:auto; filter:brightness(1.5);" />
+            <div>
+              <span class="footer__brand-name">Wingwatch Africa</span>
+              <span class="footer__brand-sub">Conservation NGO</span>
+            </div>
+          </div>
+          <p class="footer__tagline">
+            Dedicated to the scientific study and protection of African bird species —
+            advancing conservation policy across the continent.
+          </p>
+          <div class="footer__socials">
+            <a class="footer__social" href="#" aria-label="Facebook">f</a>
+            <a class="footer__social" href="#" aria-label="Twitter">𝕏</a>
+            <a class="footer__social" href="#" aria-label="Instagram">◉</a>
+            <a class="footer__social" href="#" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+
+        <div>
+          <p class="footer__heading">Contact Us</p>
+          <div class="footer__contact">
+            <div class="footer__contact-item">
+              <span>✉️</span>
+              <a class="footer__link" href="mailto:info@wingwatch.org">info@wingwatch.org</a>
+            </div>
+            <div class="footer__contact-item">
+              <span>📍</span>
+              <span>Accra, Ghana</span>
+            </div>
+            <div class="footer__contact-item">
+              <span>🌍</span>
+              <span>Operating across West Africa</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 Wingwatch Africa. All rights reserved.</p>
+        <p class="footer__copy">Protecting Africa's avian heritage, one species at a time.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
