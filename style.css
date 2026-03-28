@@ -52,9 +52,10 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth;  smooth; font-size: 20px;}
+html { scroll-behavior: smooth; font-size: 20px; }
 body {
   font-family: 'Jost', sans-serif;
+  font-weight: 300;
   background: var(--bg);
   color: var(--text);
   line-height: 1.7;
@@ -68,13 +69,15 @@ ul { list-style: none; }
 /* Typography */
 h1,h2,h3,h4,h5 {
   font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
   line-height: 1.18;
   color: var(--text);
 }
-h1 { font-size: clamp(2.4rem,5vw,4.2rem); font-weight: 600; }
-h2 { font-size: clamp(1.8rem,3.5vw,2.9rem); font-weight: 600; }
-h3 { font-size: clamp(1.2rem,2.5vw,1.75rem); font-weight: 600; }
-h4 { font-size: 1.15rem; font-weight: 600; }
+h1 { font-size: clamp(2.4rem,5vw,4.2rem); }
+h2 { font-size: clamp(1.8rem,3.5vw,2.9rem); }
+h3 { font-size: clamp(1.2rem,2.5vw,1.75rem); }
+h4 { font-size: 1.15rem; }
+h5 { font-size: 1rem; }
 p  { color: var(--text-muted); font-weight: 300; font-size: 1.02rem; }
 
 /* Layout */
