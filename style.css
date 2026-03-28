@@ -2,6 +2,62 @@
    WINGWATCH AFRICA — Global Stylesheet
    Nature greens & earth tones | Cormorant Garamond + Jost
    ============================================================ */
+   @font-face {
+     font-family: 'Cormorant Garamond';
+     src: url('../fonts/cormorant-garamond-v21-latin-300.woff2') format('woff2');
+     font-weight: 300;
+     font-style: normal;
+     font-display: block;
+   }
+   @font-face {
+     font-family: 'Cormorant Garamond';
+     src: url('../fonts/cormorant-garamond-v21-latin-300italic.woff2') format('woff2');
+     font-weight: 300;
+     font-style: italic;
+     font-display: block;
+   }
+   @font-face {
+     font-family: 'Cormorant Garamond';
+     src: url('../fonts/cormorant-garamond-v21-latin-600.woff2') format('woff2');
+     font-weight: 600;
+     font-style: normal;
+     font-display: block;
+   }
+   @font-face {
+     font-family: 'Cormorant Garamond';
+     src: url('../fonts/cormorant-garamond-v21-latin-600italic.woff2') format('woff2');
+     font-weight: 600;
+     font-style: italic;
+     font-display: block;
+   }
+   @font-face {
+     font-family: 'Cormorant Garamond';
+     src: url('../fonts/cormorant-garamond-v21-latin-700.woff2') format('woff2');
+     font-weight: 700;
+     font-style: normal;
+     font-display: block;
+   }
+   @font-face {
+     font-family: 'Jost';
+     src: url('../fonts/jost-v20-latin-300.woff2') format('woff2');
+     font-weight: 300;
+     font-style: normal;
+     font-display: block;
+   }
+   @font-face {
+     font-family: 'Jost';
+     src: url('../fonts/jost-v20-latin-500.woff2') format('woff2');
+     font-weight: 500;
+     font-style: normal;
+     font-display: block;
+   }
+   @font-face {
+     font-family: 'Jost';
+     src: url('../fonts/jost-v20-latin-600.woff2') format('woff2');
+     font-weight: 600;
+     font-style: normal;
+     font-display: block;
+   }
 
 :root {
   --primary:        #2d5a3d;
